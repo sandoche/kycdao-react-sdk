@@ -20,9 +20,12 @@ import { KycDaoProvider } from 'kycdao-react-sdk';
 const App = () => {
   const nearNetworkEnv = 'testnet';
 
+  // you can override the default settings here
+  const config = {};
+
   return (
     <div>
-      <KycDaoProvider networkId={nearNetworkEnv} config={{}}>
+      <KycDaoProvider networkId={nearNetworkEnv} config={config}>
         <KycDaoComponent />
       </KycDaoProvider>
     </div>
@@ -48,6 +51,7 @@ const KycDaoComponent = () => {
 
 Check out the [KycDaoExample](example/KycDaoExample.tsx).
 
-## API Reference
+## Documentation
 
-Check out the [API Reference](https://kycdao.github.io/kycdao-js-sdk/docs/api-reference/).
+- [KycDao API Reference](https://kycdao.github.io/kycdao-js-sdk/docs/api-reference/).
+- [TSdx](https://tsdx.io/)

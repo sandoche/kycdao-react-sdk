@@ -16,6 +16,8 @@ const KycDaoExample = () => {
       return;
     }
 
+    console.log('Running the KYC modal');
+
     setIsLoading(true);
 
     const { VerificationTypes } = await import('@kycdao/kycdao-sdk');
@@ -49,12 +51,16 @@ const KycDaoExample = () => {
 
     if (!KYC) {
       kycDao.startVerification(verificationData, options);
+    } else {
+      setIsKycValid(true);
+      setIsLoading(false);
     }
   }, [kycDao]);
 
   // Run the KYC modal if connected to the smartcontract
   React.useEffect(() => {
     const startKycAction = () => {
+      console.log('Starting the kyc action');
       if (!isKycValid && kycDao?.connectedWallet && counter.current === 0) {
         // to avoid multiple calls to registerOrLogin
         counter.current += 1;
@@ -69,9 +75,13 @@ const KycDaoExample = () => {
 
   // Start minting the tokens if the KYC is completed
   const mintSbt = async () => {
+    console.log('Mint SBT Clicked');
+
     if (!kycDao) {
       return;
     }
+
+    console.log('Start minting');
 
     setIsLoading(true);
     await kycDao.startMinting({
@@ -100,9 +110,13 @@ const KycDaoExample = () => {
 
   // Start the connection to the smartcontract
   const connect = async () => {
+    console.log('Connect Clicked');
+
     if (!kycDao) {
       return;
     }
+
+    console.log('Run connect wallet');
 
     counter.current = 0;
 
@@ -111,8 +125,7 @@ const KycDaoExample = () => {
   };
 
   const waitingForValidation = isKycCompleted && !isKycValid;
-  const isLoadingOrWaitingForValidation =
-    isLoading || validationLoading || waitingForValidation;
+  const isLoadingOrWaitingForValidation = isLoading || waitingForValidation;
 
   return (
     <div>

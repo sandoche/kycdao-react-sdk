@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -33,6 +33,7 @@
     "trailingComma": "es5"
   },
   "name": "kycdao-react-sdk",
+  "description": "A wrapper around kycdao-js-sdk for React and Next.js",
   "author": "Sandoche Adittane",
   "module": "dist/kycdao-react-sdk.esm.js",
   "size-limit": [

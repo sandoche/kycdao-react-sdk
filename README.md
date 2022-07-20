@@ -1,6 +1,6 @@
 # kycdao-react-sdk
 
-A wrapper around [https://github.com/kycdao/kycdao-js-sdk](kycdao-js-sdk) for React and Next.js
+A wrapper around [kycdao-js-sdk](https://github.com/kycdao/kycdao-js-sdk) for React and Next.js
 
 ## Installation
 

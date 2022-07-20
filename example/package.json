@@ -8,7 +8,12 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "react-app-polyfill": "^1.0.0"
+    "@tanstack/react-query": "^4.0.5",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-app-polyfill": "^1.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-native": "*",
+    "react-query": "^4.0.0"
   },
   "alias": {
     "react": "../node_modules/react",

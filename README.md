@@ -1,4 +1,4 @@
-# kycdao-react-sdk
+# kycdao-react-sdk [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 A wrapper around [kycdao-js-sdk](https://github.com/kycdao/kycdao-js-sdk) for React and Next.js
 
@@ -77,3 +77,7 @@ yarn test
 
 - [KycDao API Reference](https://kycdao.github.io/kycdao-js-sdk/docs/api-reference/).
 - [TSdx](https://tsdx.io/)
+
+## Contributors
+
+- [Sandoche](https://github.com/sandoche)

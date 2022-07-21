@@ -7,7 +7,7 @@ A wrapper around [kycdao-js-sdk](https://github.com/kycdao/kycdao-js-sdk) for Re
 > The package had not been published yet
 
 ```bash
-npm install https://github.com/sandoche/kycdao-react-sdk
+npm install https://github.com/kycdao/kycdao-react-sdk
 ```
 
 ## How to use it

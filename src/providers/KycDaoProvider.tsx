@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+// eslint-disable-next-line
 import type { KycDao, SdkConfiguration } from '@kycdao/kycdao-sdk';
 
 import getConfig from '../config';

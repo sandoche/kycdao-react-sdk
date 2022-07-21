@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import type { SdkConfiguration } from '@kycdao/kycdao-sdk';
 
 const getConfig = async (networkId = 'testnet'): Promise<SdkConfiguration> => {

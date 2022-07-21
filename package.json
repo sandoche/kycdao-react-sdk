@@ -59,8 +59,8 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@kycdao/kycdao-sdk": "^0.1.1",
-    "near-api-js": "^0.45.1",
+    "@kycdao/kycdao-sdk": "^0.1.2",
+    "near-api-js": "0.44.2",
     "persona": "^4.6.0",
     "retypeapp": "^2.4.0",
     "styled-components": "^5.3.5"

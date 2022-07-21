@@ -51,6 +51,28 @@ const KycDaoComponent = () => {
 
 Check out the [KycDaoExample](example/KycDaoExample.tsx).
 
+## Develop
+
+- Run the library watcher
+
+```sh
+yarn start
+```
+
+- Run the demo
+
+```sh
+cd example
+yarn install
+yarn start
+```
+
+- Run the tests
+
+```sh
+yarn test
+```
+
 ## Documentation
 
 - [KycDao API Reference](https://kycdao.github.io/kycdao-js-sdk/docs/api-reference/).

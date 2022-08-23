@@ -1193,10 +1193,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@kycdao/kycdao-sdk@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@kycdao/kycdao-sdk/-/kycdao-sdk-0.1.2.tgz#b712c529f4d5bb879cda8638ce0ff9f43341c646"
-  integrity sha512-Sw8tMz9aUXeo1IB+2YI3snweMOt4uys11I2pcCS9pTYe0xMGJx9au+FWDTGA3JwjqopjHs2BvcGq860Um/1d+w==
+"@kycdao/kycdao-sdk@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@kycdao/kycdao-sdk/-/kycdao-sdk-0.1.3.tgz#271c6694d351c5bf6f92206be4946768da6d3181"
+  integrity sha512-xbi3fSEV0AMC0waqc2dr3OlCyGT5N+m5R+3LnSt2cvqIEKj6FB5DIPkNmCTh6/TvpeMSpIPpV4brmA76GL2nyA==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

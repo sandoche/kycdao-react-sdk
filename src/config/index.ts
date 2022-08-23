@@ -2,25 +2,24 @@
 import type { SdkConfiguration } from '@kycdao/kycdao-sdk';
 
 const getConfig = async (networkId = 'testnet'): Promise<SdkConfiguration> => {
-  const { BlockchainNetworks, KycDaoEnvironments, VerificationTypes } = await import('@kycdao/kycdao-sdk');
+  const { BlockchainNetworks, VerificationTypes } = await import('@kycdao/kycdao-sdk');
 
   const configMap = new Map([
     [
       'testnet',
       {
-        baseUrl: 'https://staging.kycdao.xyz/api/frontend',
+        baseUrl: 'https://staging.kycdao.xyz',
         enabledBlockchainNetworks: [BlockchainNetworks.NearTestnet],
         enabledVerificationTypes: [VerificationTypes.KYC],
-        environment: KycDaoEnvironments.test,
+        demoMode: true,
       },
     ],
     [
       'mainnet',
       {
-        baseUrl: 'https://staging.kycdao.xyz/api/frontend',
+        baseUrl: 'https://kycdao.xyz',
         enabledBlockchainNetworks: [BlockchainNetworks.NearMainnet],
         enabledVerificationTypes: [VerificationTypes.KYC],
-        environment: KycDaoEnvironments.test,
       },
     ],
   ]);

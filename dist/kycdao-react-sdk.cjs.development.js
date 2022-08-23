@@ -441,7 +441,7 @@ function _extends() {
 
 var getConfig = /*#__PURE__*/function () {
   var _ref = /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(networkId) {
-    var _yield$import, BlockchainNetworks, KycDaoEnvironments, VerificationTypes, configMap, config;
+    var _yield$import, BlockchainNetworks, VerificationTypes, configMap, config;
 
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) {
@@ -457,32 +457,30 @@ var getConfig = /*#__PURE__*/function () {
           case 3:
             _yield$import = _context.sent;
             BlockchainNetworks = _yield$import.BlockchainNetworks;
-            KycDaoEnvironments = _yield$import.KycDaoEnvironments;
             VerificationTypes = _yield$import.VerificationTypes;
             configMap = new Map([['testnet', {
-              baseUrl: 'https://staging.kycdao.xyz/api/frontend',
+              baseUrl: 'https://staging.kycdao.xyz',
               enabledBlockchainNetworks: [BlockchainNetworks.NearTestnet],
               enabledVerificationTypes: [VerificationTypes.KYC],
-              environment: KycDaoEnvironments.test
+              demoMode: true
             }], ['mainnet', {
-              baseUrl: 'https://staging.kycdao.xyz/api/frontend',
+              baseUrl: 'https://kycdao.xyz',
               enabledBlockchainNetworks: [BlockchainNetworks.NearMainnet],
-              enabledVerificationTypes: [VerificationTypes.KYC],
-              environment: KycDaoEnvironments.test
+              enabledVerificationTypes: [VerificationTypes.KYC]
             }]]);
             config = configMap.get(networkId);
 
             if (config) {
-              _context.next = 11;
+              _context.next = 10;
               break;
             }
 
             throw new Error("No config for networkId: " + networkId);
 
-          case 11:
+          case 10:
             return _context.abrupt("return", config);
 
-          case 12:
+          case 11:
           case "end":
             return _context.stop();
         }

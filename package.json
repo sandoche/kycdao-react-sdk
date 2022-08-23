@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.3",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -60,7 +60,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@kycdao/kycdao-sdk": "^0.1.2",
+    "@kycdao/kycdao-sdk": "^0.1.3",
     "near-api-js": "0.44.2",
     "persona": "^4.6.0",
     "retypeapp": "^2.4.0",
